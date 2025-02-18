@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: ivory;
+    font-style: normal;
+}
+
+.Selecionador:hover{
+    color: black;
+}
+
+h1, h2, h4{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-size: 13pt;
+    color: black;
+}
+
+#Imagem_perfil{
+    text-align: center;
+}
+
+.Imagem{
+    text-align: justify;
+}
+
+.Iframe{
+    text-align: justify;
+}
+

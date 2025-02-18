@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+p{
+    color: wheat;
+    font-size: 18pt;
+    text-align: left;
+}
+
+.inicial{
+    text-align: center;
+}
+
+.inicial:hover{
+    color: white;
+    text-decoration-line: line-through;
+}
+
+#p1{
+    text-align: left;
+    color: royalblue;
+}
