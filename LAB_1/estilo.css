@@ -1,8 +1,9 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     background-color: ivory;
     font-style: normal;
 }
+
 
 .Selecionador:hover{
     color: black;
@@ -14,7 +15,7 @@ h1, h2, h4{
 
 p{
     text-align: justify;
-    font-size: 13pt;
+    font-size: 14pt;
     color: black;
 }
 
@@ -23,10 +24,17 @@ p{
 }
 
 .Imagem{
-    text-align: justify;
+    text-align: center;
+    margin: 20px;
 }
 
 .Iframe{
-    text-align: justify;
+    text-align: center;
+    margin: 20px;
 }
 
+.Tabela, th{
+    padding: 1px;
+    text-align: center;
+    border: 2px solid black;
+}
