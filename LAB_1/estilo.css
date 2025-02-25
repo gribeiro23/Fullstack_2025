@@ -4,14 +4,6 @@ body{
     font-style: normal;
 }
 
-
-.Selecionador{
-    display: block;
-    position: fixed;
-    border-style: solid black;
-    background-color: black;
-}
-
 .Selecionador:hover{
     color: black;
 }

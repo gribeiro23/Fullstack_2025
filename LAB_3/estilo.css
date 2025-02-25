@@ -1,0 +1,91 @@
+h2{
+    text-align: center;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.Cabeçalho{
+    background-color: bisque;
+    border: 2px solid darkblue;
+    height: 200px;
+}
+
+.Menu{
+    background-color: lightskyblue;
+    height: 50px;
+}
+
+.Rodapé{
+    background-color: bisque;
+    height: 120px;
+}
+
+
+.a_Menu{
+    text-align: center;
+    position: relative;
+    left: 15px;
+    right: 15px;
+    top: 16px;
+}
+
+#C{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+#Java{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#HTML{
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+#CSS{
+    position: relative;
+    right: -1680px;
+    top: 20px;
+    
+}
+
+#p_cabeçalho{
+    color: green;
+    text-align: center;
+    font-size: 50pt;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    left: 25px;
+}
+
+#p_Rodapé{
+    font-size: 15pt;
+    font-family: Comic;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.p_geral{
+    color: indigo;
+    font-size: 20pt;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.Livros{
+    text-align: center;
+}
+
+.Link{
+    text-align: center;
+}
+
