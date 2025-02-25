@@ -5,6 +5,13 @@ body{
 }
 
 
+.Selecionador{
+    display: block;
+    position: fixed;
+    border-style: solid black;
+    background-color: black;
+}
+
 .Selecionador:hover{
     color: black;
 }
@@ -26,6 +33,8 @@ p{
 .Imagem{
     text-align: center;
     margin: 20px;
+    position: relative;
+    top: 10px;
 }
 
 .Iframe{
@@ -37,4 +46,10 @@ p{
     padding: 1px;
     text-align: center;
     border: 2px solid black;
+}
+
+#Contato{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
