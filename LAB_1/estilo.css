@@ -34,7 +34,7 @@ p{
     margin: 20px;
 }
 
-.Tabela, th{
+.Tabela, th, td{
     padding: 1px;
     text-align: center;
     border: 2px solid black;
