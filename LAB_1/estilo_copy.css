@@ -39,6 +39,8 @@ th{
 
 .a_Menu a{
     color: darkred;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .a_Menu{
@@ -113,6 +115,15 @@ th{
 
 .Consulta{
     background-color: yellow;
+    width: 500px;
+    position: relative;
+    margin: auto;
+    
+}
+
+.a_consulta{
+    margin-left: 50px;
+    color: darkred;
 }
 
 
