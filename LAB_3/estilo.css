@@ -17,11 +17,29 @@ body{
     height: 50px;
 }
 
+.Tabela_contato{
+    padding: 0px;
+    border: 4px dashed red;
+    margin: auto;
+
+}
+
+th, td{
+    border: 2px solid red;
+}
+
+th{
+    color: red;
+}
+
 .Rodapé{
     background-color: bisque;
     height: 120px;
 }
 
+.a_Menu a{
+    color: darkred;
+}
 
 .a_Menu{
     text-align: center;
@@ -51,7 +69,7 @@ body{
 
 #CSS{
     position: relative;
-    right: -1680px;
+    right: -1300px;
     top: -30px;
     
 }
@@ -82,10 +100,20 @@ body{
 }
 
 .Livros{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 .Link{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
+
+.Consulta{
+    background-color: yellow;
+}
+
+
 
