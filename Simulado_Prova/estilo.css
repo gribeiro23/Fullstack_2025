@@ -1,0 +1,71 @@
+.Cabeçalho{
+    display: flex;
+    justify-content: center;
+}
+
+.p{
+    background-color: purple;
+    color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 150px;
+}
+
+#p1{
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#p2{
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Links_cabeçalho{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid gray;
+    margin-bottom: 10px;
+}
+
+.Links_menu{
+    display: flex;
+    justify-content: center;
+}
+
+.Friends{
+    display: flex;
+    justify-content: center;
+    padding: 20px;  
+}
+
+.Elenco{
+    display: flex;
+    justify-content: center;
+}
+
+.Frases{
+    display: flex;
+    justify-content: center;
+}
+
+.Imagens_centrais{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Links_finais{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Link_final{
+    display: flex;
+    justify-content: center;
+}
