@@ -1,0 +1,168 @@
+.Cabeçalho{
+    display: flex;
+    background-color: dodgerblue;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+}
+
+.Cabeçalho div{
+    margin: 10px;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    
+}
+
+.SBC{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 350px;
+}
+
+.SBC2{
+    display: flex;
+    position: absolute;
+    top: 110px;
+    left: 142px;
+}
+
+.SBC3{
+    display: flex;
+    position: absolute;
+    top: 155px;
+    left: 148px;
+}
+
+.SBC3 p{
+    font-size: 10px;
+}
+
+.SBC2 p{
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.SBC p{
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.S{
+    color: blue;
+}
+
+.B{
+    color: black;
+}
+
+.D{
+    color: orange;
+}
+
+.C{
+    color: green;
+}
+
+.Informações{
+    display: flex;
+    background-color: lightgray;
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    right: 0px;
+    height: 1000px;
+}
+
+.Locais{
+    display: flex;
+    background-color: orange;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    height: 30px;
+    width: 400px;
+}
+
+.Locais p{
+    color: white;
+    margin: 2px;
+    padding: 5px;
+}
+
+.Paco{
+    position: relative;
+    top: 70px;
+    left: -340px;
+}
+
+.Secretarias{
+    display: flex;
+    background-color: green;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    height: 30px;
+    width: 900px;
+}
+
+.Secretarias2{
+    position: absolute;
+    top: 40px;
+    left: 500px;
+}
+
+.Secretarias p{
+    color: white;
+    margin: 2px;
+    padding: 5px;
+}
+
+.Comunicação{
+    display: flex;
+    background-color: orange;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    height: 30px;
+    width: 400px;
+}
+
+.Comunicação p{
+    color: white;
+    margin: 2px;
+    padding: 5px;
+}
+
+.Final{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    background-color: dodgerblue;
+    position: absolute;
+    height: 70px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.FinalTexto{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.Final p{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
