@@ -3,6 +3,7 @@ let ctx = Canvas.getContext('2d');
 let Canvas2 = document.getElementById('Canvas2');
 let ctx2 = Canvas2.getContext('2d');
 
+//FUNÇÃO QUADRADO
 function desenhar_quadrado(largura,color1,color2,x,y,tam1,tam2){
     ctx.beginPath();
     ctx.lineWidth = largura;
@@ -13,6 +14,7 @@ function desenhar_quadrado(largura,color1,color2,x,y,tam1,tam2){
     ctx.closePath();
 }
 
+//FUNÇÃO QUADRADO2
 function desenhar_quadrado2(largura,color1,color2,x,y,tam1,tam2){
     ctx2.beginPath();
     ctx2.lineWidth = largura;
@@ -23,6 +25,7 @@ function desenhar_quadrado2(largura,color1,color2,x,y,tam1,tam2){
     ctx2.closePath();
 }
 
+//FUNÇÃO LINHA
 function desenhar_linha(largura,color1,color2,x1,y1,x2,y2){
     ctx.beginPath();
     ctx.lineWidth = largura;
@@ -36,6 +39,7 @@ function desenhar_linha(largura,color1,color2,x1,y1,x2,y2){
     ctx.beginPath();
 }
 
+//FUNÇÃO LINHA2
 function desenhar_linha2(largura,color1,color2,x1,y1,x2,y2,x3,y3){
     ctx2.beginPath();
     ctx2.lineWidth = largura;
@@ -50,6 +54,7 @@ function desenhar_linha2(largura,color1,color2,x1,y1,x2,y2,x3,y3){
     ctx2.beginPath();
 }
 
+//FUNÇÃO ARCO
 function desenhar_arco(largura,color1,color2,x,y,tam,pi1,pi2){
     ctx.beginPath();
     ctx.lineWidth = largura;
@@ -61,6 +66,7 @@ function desenhar_arco(largura,color1,color2,x,y,tam,pi1,pi2){
     ctx.closePath();
 }
 
+//FUNÇÃO ARCO2
 function desenhar_arco2(largura,color1,color2,x,y,tam,pi1,pi2){
     ctx2.beginPath();
     ctx2.lineWidth = largura;
@@ -72,6 +78,7 @@ function desenhar_arco2(largura,color1,color2,x,y,tam,pi1,pi2){
     ctx2.closePath();
 }
 
+//FUNÇÃO ESCREVER
 function escrever(largura,color1,font,texto2,x2,y2){
     ctx.beginPath();
     ctx.lineWidth = largura;
@@ -82,6 +89,7 @@ function escrever(largura,color1,font,texto2,x2,y2){
     ctx.closePath();
 
 }
+
 //DESENHO CANVA 1
 //QUADRADOS
 desenhar_quadrado(5,'blue','blue',0,0,50,50);
