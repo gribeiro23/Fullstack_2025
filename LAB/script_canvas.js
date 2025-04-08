@@ -144,7 +144,6 @@ desenhar_quadrado2(2,'#458efc','#458efc',25,265,90,35);
 desenhar_quadrado2(0,'#47bdfd','#47bdfd',123,154,20,20);
 //JANELA
 desenhar_quadrado2(0,'#47bdfd','#47bdfd',166,154,20,20);
-
 //LINHAS
 desenhar_linha2(0,'#FF6347','#FF6347',114,130,194,130,155,90);
 
