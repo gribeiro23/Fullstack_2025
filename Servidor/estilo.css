@@ -1,0 +1,47 @@
+body{
+    font-family: cursive;
+    background-color: ivory;
+    font-style: normal;
+}
+
+.Selecionador:hover{
+    color: black;
+}
+
+h1, h2, h4{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-size: 14pt;
+    color: black;
+}
+
+#Imagem_perfil{
+    text-align: center;
+}
+
+.Imagem{
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.Iframe{
+    text-align: center;
+    margin: 20px;
+}
+
+.Tabela, th, td{
+    padding: 1px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#Contato{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
