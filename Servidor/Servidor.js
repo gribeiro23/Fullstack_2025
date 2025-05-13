@@ -1,13 +1,16 @@
+//Pacotes necessários
 require("colors");
 var http = require("http")
 var express = require("express")
 let bodyParser = require("body-parser")
-var mongodb = require("mongodb");
+const { render } = require('ejs');
+const MongoClient = require("mongodb").MongoClient;
 
-const MongoClient = mongodb.MongoClient;
-const uri = 'mongodb+srv://Ozzy23:Ozyakup2303%40@gabriel.bjouz9s.mongodb.net/?retryWrites=true&w=majority&appName=Gabriel'
+//URI do MongoDb / Adquirido no MongoDb online
+const uri = 'mongodb+srv://Ozzy23:Ozyakup2303%40@gabriel.bjouz9s.mongodb.net/'
+
+// Nomeação do banco de dados e da coleção do bd
 const client = new MongoClient(uri, { useNewUrlParser: true });
-
 var dbo = client.db("Gabriel");
 var usuarios = dbo.collection("usuarios");
 
@@ -25,57 +28,49 @@ console.log("Servidor rodando ... ".rainbow)
 
 // Metodos e actions
 
-app.get("/inicio", function(requisicao, resposta){
-    resposta.redirect("LAB/index.html")
-})
+app.get('/', (req, res) => {
+    res.redirect("LAB/index.html");
+});
 
-app.post("/inicio", function(requisicao, resposta){
-    resposta.redirect("LAB/index.html")
-})
+app.get('/pagina_cadastro', (req, res) => {
+    res.redirect("LAB/Cadastro.html");
+});
 
-app.post("/cadastrar", function(requisicao, resposta){
-    let nome = requisicao.body.nome;
-    let login = requisicao.body.login;
-    let senha = requisicao.body.senha;
-    let nasc = requisicao.body.nascimento;
-    console.log(nome, login, senha, nasc);
+app.get('/criar_novo_post', (req, res) => {
+    res.redirect("LAB/cadastrar_post.html");
+});
 
-    var data = { db_nome: nome, db_login: login, db_senha: senha, db_nasc: nasc };
+
+app.post("/cadastrar", function(req, resposta){
+
+    let data = { db_nome: req.body.nome, db_login: req.body.login, db_senha: req.body.senha };
 
     usuarios.insertOne(data, function(err){
         console.log(err)
         if(err){
-            resposta.render("resposta",{status: "Erro", nome, login, senha, nasc})
+            resposta.render("resposta_cadastro.ejs",{status: "Erro ao cadastrar!"})
         }
         else {
-            resposta.render("resposta",{status: "Sucesso", nome, login, senha, nasc})
+            resposta.render("resposta_cadastro.ejs",{status: "Usuário cadastrado!"})
         }
     })
     }
 )
 
-app.get("/for_ejs", function(requisicao, resposta){
-    let valor = requisicao.query.valor;
-    resposta.render("exemplo_for",{valor})
-})
+app.post('/logar', function(req, resposta){
 
-app.post('/logar', function(requisicao, resposta){
-    let login = requisicao.body.login;
-    let senha = requisicao.body.senha;
-    console.log(login, senha);
-
-    var data = { db_login: login, db_senha: senha}
+    let data = { db_login: req.body.login, db_senha: req.body.senha}
 
     usuarios.find(data).toArray(function(err, item){
         console.log(item)
         if(item.length == 0){
-            resposta.render("resposta_login",{status: "usuario/senha não encontrado"})
+            resposta.render("resposta.ejs",{status: "usuario/senha não encontrado"})
             // nao encontrou usuário
         }else if(err){
-            resposta.render("resposta_login",{status: "erro ao logar"})
+            resposta.render("resposta.ejs",{status: "erro ao logar"})
             // erro ao logar
         }else{
-            resposta.render("resposta_login",{status: "usuario encontrado"})
+            resposta.render("resposta.ejs",{status: "usuario encontrado e login realizado!"})
             // usuário encontrado
         }
     })
